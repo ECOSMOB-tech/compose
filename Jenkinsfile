@@ -1,7 +1,7 @@
 #!groovy_script
 node{
   stage('checkout code'){
-    git url:'',branch:'main'
+    git url:'https://github.com/ECOSMOB-tech/compose.git',branch:'main'
   }
   stage('run container'){
     sh 'docker-compose config'
