@@ -4,7 +4,7 @@ node{
     git url:'https://github.com/ECOSMOB-tech/compose.git',branch:'main'
   }
   stage('run container'){
-    sh 'docker rmi nginx'
+    sh 'docker rmi -f nginx'
     sh 'docker stop nginxserver'
     sh 'docker rm -f nginxserver'
     sh 'docker-compose config'
