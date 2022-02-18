@@ -1,5 +1,5 @@
 #!groovy_script
-node{
+node('slave1'){
   stage('checkout code'){
     git url:'https://github.com/ECOSMOB-tech/compose.git',branch:'main'
   }
