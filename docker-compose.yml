@@ -2,6 +2,6 @@ version: '3.1'
 services:
    nginx:
     image: nginx
-    container_name: nginxserver
+    container_name: nginxserver1
     ports:
       - 80:80
